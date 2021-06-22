@@ -8,7 +8,7 @@ var prompts =
 "what did GOD just say?"
 ];
 
-function myFunction(){
+function prose(){
     let x = (prompts[Math.floor(Math.random() * prompts.length)]);
     document.getElementById("prompt").innerHTML = x;
 }
