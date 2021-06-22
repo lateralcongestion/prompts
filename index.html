@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Writers Limbo</title>
+    <title>game</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-<div id = randomize>
-    <button onclick="myFunction()">randomize</button>
-    <p id ="prompt"></p>
-    <textarea id="ta1">
-        Notes here...
-     </textarea>
-     <input type="button" onclick="location.href=&quot;mailto:masterlook12@gmail.com?body=&quot;+document.getElementById(&quot;ta1&quot;).value;" value="Send">
-</div>
+    <div class="body">
+        <button onclick="prose()" id="btn">randomize</button><hr>
+        <p id ="prompt"></p>
+        <hr> 
+    <textarea class="ta1">
+    You have 10 minutes to craft. 
+     </textarea><hr>
+     
+     <p id="timer"></p>
+    </div>
+    
 <script src ="prompts.js"></script>
-
+    <input type="button" onclick="location.href=&quot;mailto:masterlook12@gmail.com?body=&quot;+document.getElementById(&quot;ta1&quot;).value;" value="Send">
 </body>
 </html>
+    
+     
