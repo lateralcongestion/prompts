@@ -17,7 +17,7 @@ function prose(){
 //countdown from 5 minutes.
 var seconds = 300
 
-const fiveMins = setInterval( function() {
+fiveMins = setInterval( function() {
     if (seconds ==1){
         document.getElementById("timer").innerHTML ="STOP";
     }else{
