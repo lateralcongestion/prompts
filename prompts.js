@@ -13,3 +13,15 @@ function myFunction(){
     document.getElementById("prompt").innerHTML = x;
 }
 //function is clicked and triggers
+
+//countdown from 5 minutes.
+var seconds = 300
+
+const fiveMins = setInterval( function() {
+    if (seconds ==1){
+        document.getElementById("timer").innerHTML ="STOP";
+    }else{
+        seconds--;
+        document.getElementById("timer").innerHTML = seconds + " seconds left"
+        }
+}, 1000)
