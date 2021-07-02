@@ -24,8 +24,6 @@ function save() {
   alert('Saved')
 }
 
-console.log(prompt)
-
 var prompts = 
 [
 "you hear grunting as you slowly walk down the stairs",
@@ -40,16 +38,3 @@ function prose(){
     let x = (prompts[Math.floor(Math.random() * prompts.length)]);
     document.getElementById("words").innerHTML = x;
 }
-//function is clicked and triggers
-
-//countdown from 5 minutes.
-var seconds = 300
-
-fiveMins = setInterval( function() {
-    if (seconds ==1){
-        document.getElementById("timer").innerHTML ="STOP";
-    }else{
-        seconds--;
-        document.getElementById("timer").innerHTML = seconds + " seconds left"
-        }
-}, 1000)
