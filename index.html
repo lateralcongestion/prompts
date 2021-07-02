@@ -1,29 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>game</title>
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
-    <div class="body">
-        <button onclick="prose()" id="btn">randomize</button><hr>
-        <p id ="prompt"></p>
-        <hr> 
-    <textarea class="ta1">
-    You have 10 minutes to craft. 
-     </textarea><hr>
-     
-     <p id="timer"></p><hr>
-     <button> <a href="mailto:masterlook12@gmail.com">Send it to yourself or a friend </button></a>
-    </div>
-    
-<script src ="prompts.js"></script>
-    
-</body>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <meta charset="utf-8">
+    <title>Read, Write, Update, Delete</title>
+  </head>
+  <body>
+   <button onclick="prose()" id="btn">randomize</button>
+  <p id='words'></p>
+    <ul id="pastcomments"></ul>
+    <form id = "newcomment">
+      <input placeholder="name" type ="username" id='username'/>
+      <br>
+      <textarea placeholder="prompt" type="prompt" id="prompt"> </textarea>
+    </form>
+       <button id="submit" onclick="save()"> SUBMIT </button>
+    </body>
+   <script src="app.js"></script>
 </html>
-    
-     
